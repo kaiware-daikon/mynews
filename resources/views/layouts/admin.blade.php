@@ -31,9 +31,7 @@
                     
                     <div class="collapse navbar-coolapse" id="navbarSupportedContent">
                         
-                        <ul class="navbar-nav mr-auto">
-                            
-                        </ul>
+                        <ul class="navbar-nav mr-auto"></ul>
                         
                         <ul class="navbar-nav ml-auto">
                             @guest
