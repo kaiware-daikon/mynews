@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// 課題3、課題6 
+
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('news/create', 'Admin\NewsController@add')->middleware('auth');
     Route::post('news/create', 'Admin\NewsController@create')->middleware('auth');
