@@ -34,3 +34,8 @@ Route::get('xxx', 'AAAController@bbb');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'NewsController@index');
+
+// 課題２
+Route::get('profile', 'ProfileController@index');
