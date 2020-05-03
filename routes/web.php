@@ -29,7 +29,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('profile', 'Admin\ProfileController@index')->middleware('auth');
 });
 
-Route::get('xxx', 'AAAController@bbb');
 
 Auth::routes();
 
@@ -38,4 +37,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'NewsController@index');
 
 // 課題２
-Route::get('profile', 'ProfileController@index');
+Route::get('/profile', 'ProfileController@index');
